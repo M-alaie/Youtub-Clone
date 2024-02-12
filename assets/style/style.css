@@ -6,7 +6,10 @@
 :root {
     --color-gary-2: #5a5a5a;
     --color-gray-1: #ccc;
-    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    --main--background:#f9f9f9;
+    --color-black:#000;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
 
 * {
@@ -119,20 +122,22 @@ nav .left .nav_logo {
     display: grid;
     grid-template-columns: 15% 85%;
     height: 100vh;
-
-
+}
+.small_container{
+    grid-template-columns: 5% 93%;
 }
 
 /* side bar*/
 
 
 .container aside {
-    background: #fff;
-    position: fixed;
-    top: 0;
-    margin-top: 5rem;
+    background-color: #f4f4f4;
+    /* position: fixed; */
+   
+    margin-top: 1rem;
     padding-left: 2rem;
-    height: 100vh;
+    height: 100%;
+   
 }
 
 .container aside .shortcut_link {
@@ -193,7 +198,7 @@ nav .left .nav_logo {
 }
 /* small */
 .small_aside{
-    width: 5%;
+    width: 100%;
     
 }
 .small_aside p{
@@ -207,3 +212,67 @@ nav .left .nav_logo {
     width: 2rem;
 }
 /* ----------main---------- */
+
+main{
+    background-color: var(--main--background);
+    padding:2rem 1rem ;
+    margin-top: 10px;
+   
+
+}
+main .banner{
+    width: 100%;
+    
+}
+main .banner img{
+    width: 100%;
+    border-radius: 10px;
+}
+main .card_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 20px;
+    margin-top: 1rem;
+}
+main .card{
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+main .card .card_img img{
+    width: 100%;
+    height: auto;
+}
+main .card .card_user {
+    display: flex;
+    margin: 15px 0;
+    gap: 10px;
+   
+    justify-content: space-between;
+   
+}
+ main .card .card_user .card_user_img{
+    width: 40%;
+ }
+main .card .card_user img{
+    width: 100%;
+
+    margin-right: 30px;
+    border-radius: 50%;
+}
+main .card .card_user .info h4{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-black);
+    line-height: 1;
+    display: block;
+  
+
+}
+main .card .card_user .info p{
+    font-size: 12px;
+    margin-top: 5px;
+    color: var(--color-gary-2);
+
+
+}
