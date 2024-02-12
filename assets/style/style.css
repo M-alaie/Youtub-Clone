@@ -1,1 +1,121 @@
 @import './reset.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,200&display=swap');
+
+
+:root {
+    --color-gary-2: #5a5a5a;
+    --color-gray-1:#ccc;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-gary-2);
+}
+
+
+
+
+.div_flex {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    box-shadow: var(--box-shadow);
+    z-index: 10;
+}
+
+nav .right {
+    display: flex;
+    justify-content: end;
+}
+
+nav .right img {
+
+    width: 35px;
+    margin-top: 20px;
+    text-align: end;
+    margin: 0 5px;
+
+
+}
+
+nav .right .user_icon {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0;
+
+}
+
+nav .middle{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    margin: 0 auto;
+}
+nav .middle .search_box{
+    width: 90%;
+    border: 1px solid var(--color-gary-2);
+    border-radius: 30px;
+    padding: 6px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+nav .middle .search_box .input_search{
+    outline: 0;
+    border: 0;
+    width: 85%;
+    font-size: 14px;
+    margin-right: 10px;
+}
+nav .middle .search_box a img{
+    width: 15px;
+}
+nav .middle .voice_search{
+    width: 21px;
+    margin-left: 20px;
+}
+nav .left {
+    display: flex;
+    align-items: center;
+}
+
+nav .left .nav_menu {
+    width: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .left .nav_logo {
+    width: 135px;
+    margin-left: 20px;
+}
+/* container */
+
+.container{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    height: 100vh;
+ 
+ 
+}
+/* side bar*/
+
+
