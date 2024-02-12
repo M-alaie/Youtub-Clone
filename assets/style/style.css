@@ -137,6 +137,7 @@ nav .left .nav_logo {
     margin-top: 1rem;
     padding-left: 2rem;
     height: 100%;
+    transition: all 300ms 300s ease-in-out;
    
 }
 
@@ -252,7 +253,7 @@ main .card .card_user {
    
 }
  main .card .card_user .card_user_img{
-    width: 40%;
+    width: 5rem;
  }
 main .card .card_user img{
     width: 100%;
@@ -273,6 +274,41 @@ main .card .card_user .info p{
     font-size: 12px;
     margin-top: 5px;
     color: var(--color-gary-2);
+    
+}
+/* media query */
 
-
+@media screen and (max-width:1100px){
+   aside .shortcut_link ul li p ,.subscribed_list a p{
+    display: none;
+   }
+   .container{
+    grid-template-columns: 11% 88%;
+   }
+}
+@media screen and (max-width:952px) {
+    aside{
+        display: none;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .nav_menu{
+        display: none;
+    }
+}
+@media  screen and (max-width:590px) {
+    .div_flex .left img{
+        width: 95px;
+    }
+    nav .right img ,nav .middle .voice_search{
+        display: none;
+    }
+    nav .right .user_icon{
+        display: block;
+        width: 30px;
+    }
+    nav .middle {
+        width: 71%;
+    }
 }
