@@ -5,7 +5,7 @@
 
 :root {
     --color-gary-2: #5a5a5a;
-    --color-gray-1:#ccc;
+    --color-gray-1: #ccc;
     --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
 }
 
@@ -61,13 +61,14 @@ nav .right .user_icon {
 
 }
 
-nav .middle{
+nav .middle {
     display: flex;
     justify-content: center;
     width: 35%;
     margin: 0 auto;
 }
-nav .middle .search_box{
+
+nav .middle .search_box {
     width: 90%;
     border: 1px solid var(--color-gary-2);
     border-radius: 30px;
@@ -75,47 +76,134 @@ nav .middle .search_box{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
-nav .middle .search_box .input_search{
+
+nav .middle .search_box .input_search {
     outline: 0;
     border: 0;
     width: 85%;
     font-size: 14px;
     margin-right: 10px;
 }
-nav .middle .search_box a img{
+
+nav .middle .search_box a img {
     width: 15px;
 }
-nav .middle .voice_search{
+
+nav .middle .voice_search {
     width: 21px;
     margin-left: 20px;
 }
+
 nav .left {
     display: flex;
     align-items: center;
 }
 
 nav .left .nav_menu {
-    width: 50px;
+    width: 1.5rem;
     cursor: pointer;
-    display: none;
+   
 }
 
 nav .left .nav_logo {
     width: 135px;
     margin-left: 20px;
 }
+
 /* container */
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 15% 85%;
     height: 100vh;
- 
- 
+
+
 }
+
 /* side bar*/
 
 
+.container aside {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    margin-top: 5rem;
+    padding-left: 2rem;
+    height: 100vh;
+}
+
+.container aside .shortcut_link {
+    border-bottom: 1px solid var(--color-gray-1);
+}
+
+.container aside .shortcut_link ul li a {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: fit-content;
+    flex-wrap: wrap;
+
+}
+
+.container aside .shortcut_link ul li a:hover {
+    color: red;
+}
+
+.container aside .shortcut_link ul li a img {
+    width: 1.2rem;
+}
+
+.container aside .shortcut_link ul li a p {
+    font-size: 1rem;
+}
+/* Subscribed */
+
+.container .subscribed_list {
+    display: flex;
+    justify-content: center;
+   
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container .subscribed_list h2{
+    font-size: 0.7rem;
+    text-align: right;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0.8rem 0;
+    margin-right: 3rem;
+
+}
+.container .subscribed_list a{
+    display: flex;
+    align-items:center;
+    width: fit-content;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+}
+.container .subscribed_list a img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+/* small */
+.small_aside{
+    width: 5%;
+    
+}
+.small_aside p{
+    display: none;
+}
+.small_aside h2{
+    display: none;
+}
+.small_aside .shortcut_link{
+    margin-bottom: 11px;
+    width: 2rem;
+}
+/* ----------main---------- */
